@@ -29,7 +29,7 @@
         <td><%= post.title %></td>
         <td><%= post.author %></td>
         <td><%= post.content %></td>
-        <td><%= link_to '👁️', post, :class =>"link" %></td>
+        <td><%= link_to 'look', post, :class =>"link" %></td>
         <td><%= link_to '🖊️', edit_post_path(post), :class =>"link" %></td>
         <td><%= link_to '🗑️', post, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"link" %></td>
       </tr>
