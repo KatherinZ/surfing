@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag "surf1.jpg", :class => "style_image" %>
+<%= image_tag "surf2.jpg", :class => "style_image" %>
+<%= image_tag "surf3.jpg", :class => "style_image" %>
+<%= image_tag "surf4.jpg", :class => "style_image" %>
+
+<div class="top">
+  <h1>Surfer's Stories</h1>
+  <%= link_to '+', new_post_path, :class => "plus" %>
+</div>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.name %></td>
+        <td><%= post.title %></td>
+        <td><%= post.author %></td>
+        <td><%= post.content %></td>
+        <td><%= link_to '👁️', post, :class =>"link" %></td>
+        <td><%= link_to '🖊️', edit_post_path(post), :class =>"link" %></td>
+        <td><%= link_to '🗑️', post, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"link" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

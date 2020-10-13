@@ -1,0 +1,178 @@
+<!-- <h1>About#index</h1>
+<p>Find me in app/views/about/index.html.erb</p>
+<h2>Узнать раньше всех о запуске проекта:</h2> -->
+
+
+<body>
+<header>
+  <nav>
+    <ul>
+      <%= link_to "Промо", promo_path %>
+      <%= link_to "О нас", about_path %>
+      <%= link_to "Блог", posts_path %>
+    </ul>
+  </nav>
+  <%= image_tag "all_waves.svg", :class => "all_waves" %>
+  <h1>Сёрфинг в городе</h1>
+  <%= image_tag "wavy_grad.png", :class => "wavy_grad" %>
+</header>
+
+<div class="wrapper">
+  <div class="discript">
+    <h2>Сёрфингу в&nbsp;России быть</h2>
+    <div class="text">
+      <div class="ellipse"></div>
+      <p>Мы — тематический медиа-сервис о серфинге в рамках города. Помогаем людям узнать, что серфинг в России есть, а чтобы начать осуществлять мечту об океане, не обязательно становиться дауншифтером. Этот сервис – увлекательный рассказ про устройство мира (сёрфинга и в целом), про человека и его взаимоотношения с океаном, морем и водой, и даже немножко про смысл жизни. Здесь мы будем делится своими рассказами, вы узнаете много нового и полезного. </p>
+    </div>
+  </div>
+
+  <div class="engage">
+    <h2>Стань ближе к&nbsp;океану, не&nbsp;покидая офис</h2>
+    <div class="ellipse"></div>
+    <div class="ellipse"></div>
+    <%= image_tag "elliptic_surf.png", :class => "elliptic_surf" %>
+
+    <p>Поговорив с кучей людей и проведя не одно исследование, мы выяснили, что большинству интересно узнавать личные истории других сёрферов, находить единомышленников и тренироваться дома, чтобы, например, подготовиться к поездке в кемп.</p>
+  </div>
+
+  <!-- <div class="stats">
+   <div class="columns">
+     <div class="column_1">
+       <div class="circ"></div>
+       <h3>75%</h3>
+       <p>Хотят ближе узнать
+        сёрферскую культуру</p>
+     </div>
+     <div class="column_2">
+       <div class="circ"></div>
+       <h3>68%</h3>
+       <p>Мечтают попробовать разные виды сёрфинга</p>
+     </div>
+     <div class="column_3">
+       <div class="circ"></div>
+       <h3>59%</h3>
+       <p>Заинтересованы в поиске людей и сёрф-школ</p>
+     </div>
+   </div>
+  </div> -->
+
+
+  <div class="target">
+    <h2>Городские сёрферы — кто они?</h2>
+    <div class="person">
+      <div class="profile">
+        <%= image_tag "profile.png", :class => "profile" %>
+        <p>Соня, 19 лет</p>
+      </div>
+
+      <div class="comment">
+        <div class="circs">
+          <div class="circ"></div>
+          <div class="circ"></div>
+          <div class="circ"></div>
+        </div>
+        <ul>
+          <li>Учится в СПбГУ</li>
+          <li>Пробовала сёрфить один раз  </li>
+          <li>Вернулась в Питер, и хочет продолжить заниматься, но не знает где и как, да и вообще холодно</li>
+          <li>Не хватает общения с людьми из сферы и тематических ивентов</li>
+        </ul>
+      </div>
+      <%= image_tag "big_wave.png", :class => "img" %>
+    </div>
+
+
+    <div class="person">
+      <div class="profile">
+        <%= image_tag "profile.png", :class => "img" %>
+        <p>Соня, 19 лет</p>
+      </div>
+      <div class="comment">
+        <div class="circs">
+          <div class="circ"></div>
+          <div class="circ"></div>
+          <div class="circ"></div>
+        </div>
+        <ul>
+          <li>Учится в СПбГУ</li>
+          <li>Пробовала сёрфить один раз  </li>
+          <li>Вернулась в Питер, и хочет продолжить заниматься, но не знает где и как, да и вообще холодно</li>
+          <li>Не хватает общения с людьми из сферы и тематических ивентов</li>
+        </ul>
+      </div>
+      <%= image_tag "big_wave.png", :class => "img" %>
+    </div>
+
+
+    <div class="person">
+      <div class="profile">
+        <%= image_tag "profile.png", :class => "img" %>
+        <p>Соня, 19 лет</p>
+      </div>
+      <div class="comment">
+        <div class="circs">
+          <div class="circ"></div>
+          <div class="circ"></div>
+          <div class="circ"></div>
+        </div>
+        <ul>
+          <li>Учится в СПбГУ</li>
+          <li>Пробовала сёрфить один раз  </li>
+          <li>Вернулась в Питер, и хочет продолжить заниматься, но не знает где и как, да и вообще холодно</li>
+          <li>Не хватает общения с людьми из сферы и тематических ивентов</li>
+        </ul>
+      </div>
+      <%= image_tag "big_wave.png", :class => "img" %>
+    </div>
+  </div>
+
+
+  <div class="features">
+    <div class="spots"></div>
+    <div class="map"></div>
+    <div class="coments"></div>
+    <div class="courses"></div>
+  </div>
+
+
+  <div class="inside">
+    <h2>Как устроен сервис?</h2>
+    <div class="section">
+      <h2>Карта</h2>
+      <div class="hover-ellipse"></div>
+      <p></p>
+      <p></p>
+      <%= image_tag "example.png", :class => "img" %>
+    </div>
+  </div>
+
+
+  <div class="authors">
+    <div class="Olesya">
+      <div class="circ"></div>
+      <%= image_tag "lil_board1.png", :class => "lil_board" %>
+      <%= image_tag "lil_board1.png", :class => "face" %>
+      <h3>Олеся Шевченко</h3>
+      <p>тут будет пару слов об авторе</p>
+    </div>
+    <div class="Katya">
+      <div class="circ"></div>
+      <%= image_tag "lil_board2.png", :class => "lil_board" %>
+      <%= image_tag "lil_board2.png", :class => "face" %>
+      <h3>Катя Зырянова</h3>
+      <p>тут будет пару слов об авторе</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="half-ellipse"></div>
+    <ul>
+      <li>©2020 «‎Серфинг в городе»‎</li>
+      <li>Политика конфиденциальности‎</li>
+      <li>Контакты</li>
+    </ul>
+  </footer>
+
+
+</div>
+</body>

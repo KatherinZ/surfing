@@ -1,0 +1,71 @@
+// Place all the styles related to the About controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+  body{
+    list-style: none;
+    font-family: 'Nunito Sans', arial, helvetica, sans-serif;
+    margin: 0;
+  }
+  header{
+    background-color: #15239D; height: 60vw;
+  }
+  header {
+    nav {
+      ul {
+        display: flex; flex-direction: row; color: #fff;} a{
+          padding: 1.5vw;
+        }
+    }
+  }
+
+  ul{
+    a:visited {
+      color: #fff; }
+      a:hover{
+        text-decoration: underline;
+      }
+  }
+
+  header{
+    h1{
+      color: #fff; font-family: 'Nunito Sans'; font-size: 5.6vw; display: block; margin-left: 25vw; margin-top: 20vw;
+    }
+  }
+
+
+  header{
+    .wavy_grad{
+       position: absolute; width: 35vw;
+     }
+     .all_waves{
+       position: absolute; width: 50vw;
+
+     }
+  }
+
+  header{
+    .all_waves{
+      margin-left: -25vw;
+    }
+    .wavy_grad{
+      margin-left: 70vw;
+      margin-top: -25vw;
+      width: 45vw;
+    }
+  }
+
+   .wrapper{
+     h2{
+       font-size: 5vw;
+       line-height: 5.2vw;
+       width: 70vw;
+       margin-left: 10vw;
+     }
+     p{
+       width: 40vw;
+       font-size: 1.5vw;
+       margin-left: 30vw;
+     }
+   }

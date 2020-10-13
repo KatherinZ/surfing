@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag "surf1.jpg", :class => "style_image" %>
+<%= image_tag "surf2.jpg", :class => "style_image" %>
+<%= image_tag "surf3.jpg", :class => "style_image" %>
+<%= image_tag "surf4.jpg", :class => "style_image" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @post.name %>
+</p>
+
+<%= link_to(image_tag(@post.image.thumb.url, alt: 'Image'), @post.image.url, target: '_blank') if @post.image? %>
+
+<%= link_to(image_tag(@post.image.small_thumb.url, alt: 'Image'), @post.image.url, target: '_blank') if @post.image? %>
+<br>
+<%= image_tag(@post.image.url, alt: 'Image') if @post.image? %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+	<strong>Author:</strong>
+	<%= @post.author %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @post.content %>
+</p>
+
+<h2>Comments</h2>
+<%= render @post.comments %>
+
+
+<h3>Add a comment:</h3>
+<%= render "comments/form" %>
+
+<%= link_to '🖊️', edit_post_path(@post) %> |
+<%= link_to '⬅️', posts_path %>
