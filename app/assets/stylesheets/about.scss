@@ -1,11 +1,58 @@
 // Place all the styles related to the About controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+// @font-face {
+//   font-family: "apercu-bold";
+//   font-weight: auto;
+//   src: url(font/ApercuMonoPro-Bold.ttf)
+//   format('truetype');
+// }
+// @font-face {
+//   font-family: "apercu-reg";
+//   font-weight: auto;
+//   src: url(font/ApercuMonoPro-Regular.ttf)
+//   format('truetype');
+// }
+// @font-face {
+//   font-family: "apercu-med";
+//   font-weight: auto;
+//   src: url(font/ApercuMonoPro-Medium.ttf)
+//   format('truetype');
+// }
+// @font-face {
+//   font-family: "apercu-light";
+//   font-weight: auto;
+//   src: url(font/ApercuMonoPro-Light.ttf)
+//   format('truetype');
+// }
+// @font-face {
+//   font-family: "stratos-med";
+//   font-weight: auto;
+//   src: url(font/Stratos-Medium.ttf)
+//   format('truetype');
+// }
+// @font-face {
+//   font-family: "stratos-reg";
+//   font-weight: auto;
+//   src: url(font/Stratos-Regular.ttf)
+//   format('truetype');
+// }
+// @font-face {
+//   font-family: "stratos-bold";
+//   font-weight: auto;
+//   src: url(font/Stratos-Bold.ttf)
+//   format('truetype');
+// }
+
+
+$marginLeft: 7vw;
 
   body{
     list-style: none;
-    font-family: 'Nunito Sans', arial, helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
   }
   header{
@@ -15,7 +62,7 @@
     nav {
       ul {
         display: flex; flex-direction: row; color: #fff;} a{
-          padding: 1.5vw;
+          padding: 1.5vw; font-family: 'Inter', sans-serif; font-weight: 500;
         }
     }
   }
@@ -30,7 +77,8 @@
 
   header{
     h1{
-      color: #fff; font-family: 'Nunito Sans'; font-size: 5.6vw; display: block; margin-left: 25vw; margin-top: 20vw;
+      color: #fff; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 5.6vw; display: block; margin-left: 25vw; margin-top: 20vw; width: 40vw; line-height: 1;
+
     }
   }
 
@@ -61,7 +109,7 @@
        font-size: 5vw;
        line-height: 5.2vw;
        width: 70vw;
-       margin-left: 10vw;
+       margin-left: $marginLeft;
      }
      p{
        width: 40vw;
