@@ -13,8 +13,8 @@
 
 
 
-$marginLeft: 7vw;
 
+<<<<<<< HEAD
   body{
     list-style: none;
     font-family: 'Inter', sans-serif;
@@ -31,43 +31,21 @@ $marginLeft: 7vw;
         }
     }
   }
-
-  ul{
-    a:visited {
-      color: #fff; }
-      a:hover{
-        text-decoration: underline;
-      }
-  }
-
-  header{
-    h1{
-      color: #fff; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 5.6vw; display: block; margin-left: 25vw; margin-top: 20vw; width: 40vw; line-height: 1;
-
-    }
-  }
+=======
+>>>>>>> e37605d4d8ebf33bc9ce639196a7624bbfe04707
 
 
-  header{
-    .wavy_grad{
-       position: absolute; width: 35vw;
-     }
-     .all_waves{
-       position: absolute; width: 50vw;
+  // ul{
+  //   a:visited {
+  //     color: #fff; }
+  //     a:hover{
+  //       text-decoration: underline;
+  //     }
+  // }
 
-     }
-  }
 
-  header{
-    .all_waves{
-      margin-left: -25vw;
-    }
-    .wavy_grad{
-      margin-left: 70vw;
-      margin-top: -25vw;
-      width: 45vw;
-    }
-  }
+
+
 
    .wrapper{
      h2{
