@@ -4,48 +4,13 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-// @font-face {
-//   font-family: "apercu-bold";
-//   font-weight: auto;
-//   src: url(font/ApercuMonoPro-Bold.ttf)
-//   format('truetype');
-// }
-// @font-face {
-//   font-family: "apercu-reg";
-//   font-weight: auto;
-//   src: url(font/ApercuMonoPro-Regular.ttf)
-//   format('truetype');
-// }
-// @font-face {
-//   font-family: "apercu-med";
-//   font-weight: auto;
-//   src: url(font/ApercuMonoPro-Medium.ttf)
-//   format('truetype');
-// }
-// @font-face {
-//   font-family: "apercu-light";
-//   font-weight: auto;
-//   src: url(font/ApercuMonoPro-Light.ttf)
-//   format('truetype');
-// }
-// @font-face {
-//   font-family: "stratos-med";
-//   font-weight: auto;
-//   src: url(font/Stratos-Medium.ttf)
-//   format('truetype');
-// }
-// @font-face {
-//   font-family: "stratos-reg";
-//   font-weight: auto;
-//   src: url(font/Stratos-Regular.ttf)
-//   format('truetype');
-// }
-// @font-face {
-//   font-family: "stratos-bold";
-//   font-weight: auto;
-//   src: url(font/Stratos-Bold.ttf)
-//   format('truetype');
-// }
+@font-face {
+  font-family: "apercu-bold";
+  font-weight: auto;
+  src: url(font/ApercuMonoPro-Bold.ttf)
+  format('truetype');
+}
+
 
 
 $marginLeft: 7vw;
