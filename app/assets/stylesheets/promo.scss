@@ -46,7 +46,7 @@
 }
 
 .desc__block {
-  padding: 12% 10%;
+  padding: 14% 10%;
   display: flex;
   .desc__block__paragraph {
     padding-top: 8%;
@@ -64,8 +64,129 @@
 
 //styles for functions section
 .function {
+  position: relative;
   background-color: #15239D;
+}
+
+.function__block {
+  position: relative;
+  padding-top: 10%;
+
+  .function__block-circle {
+    animation: rotate linear 30s infinite;
+    z-index: 1;
+  }
+
+  @keyframes rotate {
+    0%{
+      transform: translate(27vw, -32vw) rotate(0deg);
+    }
+    100% {
+      transform: translate(27vw, -32vw) rotate(360deg);
+    }
+  }
+
   .function__block-compos  {
     width: 60vw;
+    transform: translate(0px, 0px);
+    z-index: 2;
+  }
+
+  .function__block__text {
+    width: 44%;
+    transform: translate(38vw, -20vw);
   }
 }
+
+.function__desc {
+  display: flex;
+  padding-bottom: 30vw;
+}
+
+.function__desc__block  {
+  text-align: center;
+  &:first-of-type {
+    transform: translate(12vw, 0vw);
+  }
+  &:nth-of-type(2){
+    transform: translate(26vw, 1vw);
+  }
+  &:nth-of-type(3){
+    transform: translate(-8vw, 9vw);
+  }
+  &:nth-of-type(4){
+    transform: translate(10vw, 11vw);
+  }
+
+
+
+  span {
+    background: #5458F7;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 125%;
+    color: #FFFFFF;
+    padding: 15px 50px;
+    &:hover {
+      background: #019B65;
+    }
+  }
+}
+
+.function__link {
+  transform: translate(12vw, 18vw);
+  & a {
+    color: #DADADA;
+    &:visited {
+      color: #929292;
+    }
+  }
+}
+
+//styles for subscribe part
+.sub {
+  background-color: #1B1B1B;
+}
+
+.sub__block {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.sub__block__text {
+  padding: 14% 8%;
+  width: 50%;
+
+  span {
+    display: block;
+    font-size: 18px;
+    line-height: 145%;
+    color: #767676;
+    text-align: end;
+    margin-right: 13%;
+    margin-bottom: 64px;
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
+}
+
+.sub__block__pic {
+  position: absolute;
+  top: -28%;
+  right: 0;
+}
+
+.sub__block__links {
+  padding: 0px 8% 8%;
+  font-size: 18px;
+  line-height: 115.5%;
+  a {
+    margin-right: 24px;
+    color: #B6B6B6;
+  }
+}
+
