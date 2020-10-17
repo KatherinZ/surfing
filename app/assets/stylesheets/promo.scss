@@ -1,3 +1,36 @@
 // Place all the styles related to the promo controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.main {
+  background-image: url(image-path('main-bc.png'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+
+.main__content {
+  display: flex;
+}
+
+.main__content__text {
+  margin-left: 9vw;
+  padding-top: 15vw;
+  p {
+    margin-top: 24px;
+  }
+}
+
+.desc-paragraph {
+  font-size: 21px;
+  line-height: 145%;
+  color: #DADADA;
+}
+
+.main__content__pic {
+  padding-top: 1vw;
+  img {
+    width: 100%;
+  }
+}
