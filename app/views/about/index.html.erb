@@ -6,76 +6,198 @@
 <body>
 
 <div class="wrapper">
-  <div class="discript">
-    <h2>Концепция</h2>
-    <div class="text">
-      <div class="ellipse"></div>
-      <p><span>Usurf</span> – тематический медиа-сервис о серфинге в рамках города.  Это пошаговый план к достижению давней мечты, карманная энциклопедия знаний и лайфхаков. Этот проект – увлекательный рассказ про устройсво мира серфинга, про человека и его взаимоотношения с океаном, и даже немного про смысл жизни</p>
+
+  <div class="about">
+    <div class="heading">
+      <h2>Кто мы?</h2>
+      <div class="thin-line"></div>
+      <p>концепция</p>
     </div>
+    <div class="discript">
+    <%= image_tag "text-logo.svg", :class => "text-logo" %>
+      <p> – тематический медиа-сервис о серфинге в рамках города.  Это пошаговый план к достижению давней мечты, карманная энциклопедия знаний и лайфхаков. Этот проект – увлекательный рассказ про устройсво мира серфинга, про человека и его взаимоотношения с океаном, и даже немного про смысл жизни</p>
+    </div>
+      <%= image_tag "half-logo.png", :class => "half-logo" %>
   </div>
 
-  <div class="engage">
-    <h2>Станьте ближе к океану и мечте</h2>
-    <div class="ellipse"></div>
-    <div class="ellipse"></div>
-    <%= image_tag "elliptic_surf.png", :class => "elliptic_surf" %>
-
-    <p>Поведя исследования и более 10 глубинных интервью, мы выяснили, что большинству респодентов серфинг интересен и как один вид активного отдыха и как способ найти единомышленников, внутреннюю гармонию. Однако люди просто не знают, что серфинг есть в России. Мы же рассказываем о разнообразных возможностях осуществить дальнюю мечту в рамках города</p>
+  <div class="research">
+    <div class="heading">
+      <h2>Что мы выяснили?</h2>
+    </div>
+      <p> Проведя исследования и более
+      10 глубинных интервью, мы выяснили, что большинству респодентов серфинг интересен
+      и как один вид активного отдыха,
+      и как способ найти единомыш-
+      ленников, внутреннюю гармонию. </p>
+      <p>Однако люди просто не знают, что серфинг есть
+      в России. Мы же рассказываем о разнообразных возможностях осуществить дальнюю мечту
+      в рамках города.</p>
+      <%= image_tag "research-screen.png", :class => "research-screen" %>
+      <%= image_tag "dynamic.png", :class => "dynamic" %>
   </div>
 
-  <div class="needs">
-  <h2>Потребности пользователей</h2>
-
-    <div class="number_1">
-      <h3>01</h3>
-      <p>Найти места, где посёрфить в России</p>
+  <div class="tasks">
+    <div class="heading">
+      <h2>Какие задачи решаем?</h2>
+      <div class="thin-line"></div>
+      <p>потребности/функции</p>
     </div>
-    <div class="number_2">
-      <h3>02</h3>
-      <p>Почувствовать поддержку других
-членов коммьюнити</p>
-    </div>
-    <div class="number_3">
-      <h3>03</h3>
-      <p>Узнать больше о культуре и лайфстайле сёрферов в развлекательном ключе</p>
-    </div>
-    <div class="number_4">
-      <h3>04</h3>
-      <p>Подготовиться к первому сёрфингу
-в домашних условиях</p>
-    </div>
-  </div>
-
-
-  <div class="perks">
-      <h2>Преимущества</h2>
-      <div class="grid">
-        <div class="circ_1">
-          <%# <%= image_tag "profile.png", :class => "profile" %> %>
-          <p>Полное погружение в мир океана и волн</p>
-        </div>
-        <div class="trap_1">
-          <%# <%= image_tag "profile.png", :class => "profile" %> %>
-          <p>Выбор любого вида сёрфинга</p>
-        </div>
-        <div class="square_1">
-          <%# <%= image_tag "profile.png", :class => "profile" %> %>
-          <p>Все споты в одном месте</p>
-        </div>
-        <div class="square_2">
-          <%# <%= image_tag "profile.png", :class => "profile" %> %>
-          <p>Докажем, что сёрфинг в России существует и развивается</p>
-        </div>
-        <div class="trap_2">
-          <%# <%= image_tag "profile.png", :class => "profile" %> %>
-          <p>Возможностьстать частью большого коммьюнити</p>
-        </div>
-        <div class="circ_1">
-          <%# <%= image_tag "profile.png", :class => "profile" %> %>
-          <p>Тренировки разного типа для сёрферов</p>
-        </div>
+      <div class="task_1">
+        <h3>Познавать серф-культуру</h3>
+        <%= image_tag "half-logo.png", :class => "half-logo" %>
+        <p>Раздел «Лайфстайл» дает полное погружение
+        в философию и культуру серфинга. Давно хотели узнать, что такое локализм? Или что на самом деле означает серферская «шака»? Здесь есть все ответы.</p>
+      </div>
+      <div class="task_2">
+        <h3>Находить серф-школы</h3>
+        <%= image_tag "half-logo.png", :class => "half-logo" %>
+        <p>В Usurf есть раздел, где все серф-школы и кемпы России собраны на одной карте. На случай, если вам казалось, что серфинга у нас в стране нет — все не так безнадежно.</p>
+      </div>
+      <div class="task_3">
+        <h3>Подготовиться к тренировке</h3>
+        <%= image_tag "half-logo.png", :class => "half-logo" %>
+        <p>Целый раздел отведен под отдельные тренировки
+        и курсы, которые помогут вам подгоовиться к поездке
+        на океан. Или просто настроиться на сёрферский вайб
+        не только ментально, но и физически.</p>
       </div>
   </div>
+
+  <div class="discript">
+    <div class="heading">
+      <h2>С чем работаем?</h2>
+      <div class="thin-line"></div>
+      <p>основные фичи</p>
+    </div>
+    <%= image_tag "j_letter.png", :class => "J_letter" %>
+    <div class="all-features">
+      <div class="feature">
+         <p>Карта спотов</p>
+         <%= image_tag "j_letter.png", :class => "J_letter" %>
+      </div>
+      <div class="feature">
+         <p>Комментарии с ответами</p>
+         <%= image_tag "j_letter.png", :class => "J_letter" %>
+      </div>
+      <div class="feature">
+         <p>Лайки</p>
+         <%= image_tag "j_letter.png", :class => "J_letter" %>
+      </div>
+      <div class="feature">
+         <p>Сохранить в коллекцию</p>
+         <%= image_tag "j_letter.png", :class => "J_letter" %>
+      </div>
+      <div class="feature">
+         <p>Фильтры поисковой выдачи</p>
+         <%= image_tag "j_letter.png", :class => "J_letter" %>
+      </div>
+      <div class="feature">
+         <p>Подписка на тег</p>
+         <%= image_tag "j_letter.png", :class => "J_letter" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="target">
+    <div class="heading">
+      <h2>Для кого?</h2>
+      <div class="thin-line"></div>
+      <p>целевая аудитория</p>
+    </div>
+      <div class="person">
+         <div class="back-rect">
+           <p>Живет в СПб, мечтает снова встать на доску и переехать к океану. Знает о серфинге в России, но предпочитает более доступные виды активного отдыха.</p>
+         </div>
+         <div class="front-rect">
+           <div class="person-card-header">
+              <h4>Евгений, 24 года</h4>
+              <%= image_tag "boards-icon.svg", :class => "boards-icon" %>
+              <p>Фрилансер</p>
+           </div>
+           <%= image_tag "person1.png", :class => "person-img" %>
+
+           <div class="person-card-discript">
+              <h4>Пробовал сёрфить 2 раза</h4>
+              <p>Живет в СПб, мечтает снова встать на доску и переехать к океану. Знает о серфинге в России, но предпочитает более доступные виды активного отдыха.</p>
+           </div>
+         </div>
+      </div>
+
+      <div class="person">
+         <div class="back-rect">
+           <p>Живет в СПб, мечтает снова встать на доску и переехать к океану. Знает о серфинге в России, но предпочитает более доступные виды активного отдыха.</p>
+         </div>
+         <div class="front-rect">
+           <div class="person-card-header">
+              <h4>Сергей, 21 год</h4>
+              <%= image_tag "boards-icon.svg", :class => "boards-icon" %>
+              <p>Студент</p>
+           </div>
+           <%= image_tag "person1.png", :class => "person-img" %>
+
+           <div class="person-card-discript">
+              <h4>Мечтает о коммьюнити</h4>
+              <p>Учится на последнем курсе МГУ, катается на скейте,  мечтает найти свое дело, и заниматься им в кругу единомышленников. Любит активные тренировки и тематические тусовки.</p>
+           </div>
+         </div>
+      </div>
+
+      <div class="person">
+         <div class="back-rect">
+           <p>Живет в СПб, мечтает снова встать на доску и переехать к океану. Знает о серфинге в России, но предпочитает более доступные виды активного отдыха.</p>
+         </div>
+         <div class="front-rect">
+           <div class="person-card-header">
+              <h4>Алина, 23 года</h4>
+              <%= image_tag "boards-icon.svg", :class => "boards-icon" %>
+              <p>Офисный работник</p>
+           </div>
+           <%= image_tag "person1.png", :class => "person-img" %>
+
+           <div class="person-card-discript">
+              <h4>Хочет стать серф-тренером</h4>
+              <p>Работает в IT компании, любит пробовать новые активности, хочет стать серф-тренером. Часто ищет возможность съездить на выходные или в отпуск к океану.</p>
+           </div>
+         </div>
+      </div>
+
+  </div>
+
+
+  <div class="authors">
+    <div class="author">
+      <%= image_tag "olesya-profile.png", :class => "profile-img" %>
+      <%= image_tag "olesya-letter.svg", :class => "profile-letter" %>
+      <h3>Олеся Шевченко</h3>
+      <p>Главная по волнам
+      Отвечаю за страницу «Промо»,прототипы,
+      типографику, JTBD
+      и многие другие штуки</p>
+    </div>
+    <div class="author">
+      <%= image_tag "kate-profile.png", :class => "profile-img" %>
+      <%= image_tag "kate-letter.svg", :class => "profile-letter" %>
+      <h3>Катя Зырянова</h3>
+      <p>Главная по песочку
+      Делаю страницу «О нас», часть прототипов, интервью и прочее</p>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <ul class="captions">
+      <li>©2020 «‎Серфинг в городе»‎</li>
+      <li>Политика конфиденциальности‎</li>
+      <li>Контакты</li>
+    </ul>
+    <ul class="media-links">
+      <%= image_tag "fb.svg", :class => "media-img" %>
+      <%= image_tag "insta.svg", :class => "media-img" %>
+      <%= image_tag "behance.svg", :class => "media-img" %>
+    </ul>
+
+  </div>
+
 
   <div class="target">
     <h2>Городские сёрферы — кто они?</h2>

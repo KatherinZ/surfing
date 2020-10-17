@@ -2,95 +2,95 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-@font-face {
-  font-family: "Proxima Bold";
-  font-weight: auto;
-  src: url(../font/ProximaNova-Bold.ttf)
-  format('truetype');
-}
-@font-face {
-  font-family: "Proxima Reg";
-  font-weight: auto;
-  src: url(../font/ProximaNova-Regular.ttf)
-  format('truetype');
-}
-@font-face {
-  font-family: "Proxima Reg It";
-  font-weight: auto;
-  src: url(../font/ProximaNova-RegularIt.ttf)
-  format('truetype');
-}
-
-$regFont: "Proxima reg", helvetica, sans-serif;
-$boldFont: "Proxima Bold", helvetica, sans-serif;
-$italicFont: "Proxima Reg It", helvetica, sans-serif;
-$fosiOne: 3.5vw;
-$fosiTwo: 2vw;
-$fosiThree: 1.5vw;
-$blockWidth: 65vw;
-$leftMargin: 8vw;
-$imgMargin: 20vw;
-$paddingStand: 2vw;
-$line: 1;
-
-h1, h2, h3{
-font-family: $boldFont;
-}
-h1{
-font-size: $fosiOne;
-}
-h2{
-font-size: $fosiTwo;
-}
-h3{
-font-size: $fosiThree;
-}
-
-
-
-div
- { width: $blockWidth + 5vw;
-  p
-  { width: $blockWidth; font-family: $regFont;
-    margin-left: $leftMargin + 2vw; line-height: $line + 0.2;
-  }
-}
-
-.main
-  { :first-child
-    {
-      margin-left: $imgMargin;
-      width: 60vw;
-    }
-}
-.history
-{ .ideology
-  { blockquote
-    { p {
-   background-color: rgba(205,205,205, 0.4);
-   padding: $paddingStand;
-   font-family: $italicFont;
-      }
-    }
-}
-}
-
-.history
-  { :first-child{
-    margin-left: $leftMargin + 2vw;
-  }
-}
-.ideology
-  { .ideo_cont
-    { display: flex;
-      width: 80vw;
-      // margin-left: $leftMargin;
-  } :first-child
-  { width: 60vw;
-  } p {
-    width: 50vw;
-  }
-}
+// @font-face {
+//   font-family: "Proxima Bold";
+//   font-weight: auto;
+//   src: url(../font/ProximaNova-Bold.ttf)
+//   format('truetype');
+// }
+// @font-face {
+//   font-family: "Proxima Reg";
+//   font-weight: auto;
+//   src: url(../font/ProximaNova-Regular.ttf)
+//   format('truetype');
+// }
+// @font-face {
+//   font-family: "Proxima Reg It";
+//   font-weight: auto;
+//   src: url(../font/ProximaNova-RegularIt.ttf)
+//   format('truetype');
+// }
+//
+// $regFont: "Proxima reg", helvetica, sans-serif;
+// $boldFont: "Proxima Bold", helvetica, sans-serif;
+// $italicFont: "Proxima Reg It", helvetica, sans-serif;
+// $fosiOne: 3.5vw;
+// $fosiTwo: 2vw;
+// $fosiThree: 1.5vw;
+// $blockWidth: 65vw;
+// $leftMargin: 8vw;
+// $imgMargin: 20vw;
+// $paddingStand: 2vw;
+// $line: 1;
+//
+// h1, h2, h3{
+// font-family: $boldFont;
+// }
+// h1{
+// font-size: $fosiOne;
+// }
+// h2{
+// font-size: $fosiTwo;
+// }
+// h3{
+// font-size: $fosiThree;
+// }
+//
+//
+//
+// div
+//  { width: $blockWidth + 5vw;
+//   p
+//   { width: $blockWidth; font-family: $regFont;
+//     margin-left: $leftMargin + 2vw; line-height: $line + 0.2;
+//   }
+// }
+//
+// .main
+//   { :first-child
+//     {
+//       margin-left: $imgMargin;
+//       width: 60vw;
+//     }
+// }
+// .history
+// { .ideology
+//   { blockquote
+//     { p {
+//    background-color: rgba(205,205,205, 0.4);
+//    padding: $paddingStand;
+//    font-family: $italicFont;
+//       }
+//     }
+// }
+// }
+//
+// .history
+//   { :first-child{
+//     margin-left: $leftMargin + 2vw;
+//   }
+// }
+// .ideology
+//   { .ideo_cont
+//     { display: flex;
+//       width: 80vw;
+//       // margin-left: $leftMargin;
+//   } :first-child
+//   { width: 60vw;
+//   } p {
+//     width: 50vw;
+//   }
+// }
 
 
 

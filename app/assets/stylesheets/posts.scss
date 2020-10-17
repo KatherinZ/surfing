@@ -33,9 +33,7 @@ body, p, ol, ul, td {
 }
 
 
-body h1{
-   font-family: 'Inter', sans-serif;
- }
+
  .style_image + div{
    display: flex;
    flex-direction: row;
@@ -59,14 +57,7 @@ a:hover {
   transform: scale(0.1vw); }
 
 
-body input{
-  border: 0.1vw solid #327a77;
-  border-radius: 2vw 2vw 2vw 2vw;
-  padding: 0.7vw;
-  margin-top: 1vw;
-  background-color: #fff;
-  font-family: 'Inter', sans-serif;
-}
+
 
 body btn{
   background-color: #327a77;
