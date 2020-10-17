@@ -1,7 +1,77 @@
+<!--first start screen-->
 <section class="main section">
   <%= render "navbar" %>
+  <div class="main__content">
+    <div class="main__content__text">
+      <h1>Usurf&nbsp;&mdash; мечта о&nbsp;серфинге в&nbsp;кармане</h1>
+      <p class="desc-paragraph">Станьте серфером в реалиях города</p>
+    </div>
+    <div class="main__content__pic">
+      <%= image_tag "main-pic.png", :class => "main-pic" %>
+    </div>
+  </div>
 </section>
-<h1>Prom#index</h1>
-<p>Find me in app/views/promo/index.html.erb</p>
-<%# <%= link_to "About", about_path %> %>
-<%= render "subscribers/form" %>
+
+<!--screen with short descriprion-->
+<section class="desc section">
+  <div class="desc__block">
+    <%= image_tag "interface.png", class => "desc__block__pic" %>
+    <p class="desc__block__paragraph">Usurf&nbsp;&mdash; медиа-сервис о&nbsp;сёрфинге для тех, кто только мечтает попробовать это дело и&nbsp;погрузиться с&nbsp;головой в&nbsp;сёрферскую культуру. Мы&nbsp;переносим концепцию мечты об&nbsp;океане в&nbsp;рамки города</p>
+  </div>
+</section>
+
+
+<!--screen with main functions-->
+<section class="function section">
+  <!--composition-->
+  <div class="function__block">
+    <%= image_tag "circle-surfing-prepare.svg", :class => "function__block-circle"%>
+    <%= image_tag "surfing-composition.png", :class => "function__block-compos" %>
+    <div class="function__block__text">
+      <h3>Все самое полезное и&nbsp;интересное о&nbsp;серфинге</h3>
+      <p class="desc-paragraph">Разнообразный материал, который подготовит тебя к&nbsp;первым волнам</p>
+    </div>
+  </div>
+    <!--block like buttons-->
+  <div class="function__desc">
+    <div class="function__desc__block">
+      <span>Атмосфера</span>
+        <%= image_tag "circle-surfing-prepare.svg", :class => "function__desc__block-circle"%>
+    </div>
+    <div class="function__desc__block">
+      <span>Комьюнити</span>
+      <%= image_tag "circle-surfing-prepare.svg", :class => "function__desc__block-circle"%>
+    </div>
+    <div class="function__desc__block">
+      <span>Культура</span>
+      <%= image_tag "circle-surfing-prepare.svg", :class => "function__desc__block-circle"%>
+    </div>
+    <div class="function__desc__block">
+      <span>Карта серфшкол</span>
+      <%= image_tag "circle-surfing-prepare.svg", :class => "function__desc__block-circle"%>
+    </div>
+  </div>
+    <!--link to about-->
+  <div class="function__link">
+      <%= link_to "Подробнее", about_path %>
+  </div>
+</section>
+
+<!--screen with subscribe-->
+<section class="sub section">
+  <div class="sub__block">
+    <!--subscribe and qoute blcok-->
+    <div class="sub__block__text">
+      <h3>«Если у тебя плохой день, поймай волну»</h3>
+      <span>Фрости Хессон</span>
+
+      <p class="desc-paragraph">Подпишитесь на нашу рассылку</p>
+      <%= render "subscribers/form" %>
+    </div>
+      <%= image_tag "s-footer.svg", class => "sub__block__pic" %>
+  </div>
+  <div class="sub__block__links">
+    <%= link_to "О проекте", about_path %>
+    <%= link_to "Блог", posts_path %>
+  </div>
+</section>
