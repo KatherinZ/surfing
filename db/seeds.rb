@@ -25,6 +25,20 @@ posts = [
 	author: "Nick Cave Old Too",
 	content: "Some Old Tracklist",
 	image: open("https://in-sound.ru/upload/iblock/d85/d859aa8387fd5fcd7a933be2af91066b.jpg")
+},
+{
+	name: "Old Album",
+	title: "The Bad Seeds Old",
+	author: "Nick Cave Old Too",
+	content: "Some Old Tracklist",
+	image: open("https://in-sound.ru/upload/iblock/d85/d859aa8387fd5fcd7a933be2af91066b.jpg")
+},
+{
+	name: "Old Album",
+	title: "The Bad Seeds Old",
+	author: "Nick Cave Old Too",
+	content: "Some Old Tracklist",
+	image: open("https://in-sound.ru/upload/iblock/d85/d859aa8387fd5fcd7a933be2af91066b.jpg")
 }
 ]
 
