@@ -14,7 +14,7 @@
 
 
 <div class="top">
-  <%= link_to 'создать новый пост', new_post_path, :class => "create_post" %>
+  <%= link_to 'создать пост', new_post_path, :class => "create-post" %>
 </div>
 
 
@@ -32,15 +32,17 @@
     <% @posts.each do |post| %>
       <tr class="posts__item">
         <td><%= image_tag( post.image.thumb.url, alt: 'Image' , :class => "posts__item__img") %></td>
-        <td class="posts__item__text"><%= post.name %></td>
-        <td class="posts__item__text"><%= post.title %></td>
+        <td class="posts__item__text posts__item__text-theme"><%= post.name %></td>
+        <td class="posts__item__text posts__item__text-title"><%= post.title %></td>
         <!-- <td class="posts__item__text">
           <%= post.author %>
         </td> -->
         <!-- <td class="posts__item__text"><%= post.content %></td> -->
-        <td><%= link_to '👁', post, :class =>"link" %></td>
-        <td><%= link_to '🖊️', edit_post_path(post), :class =>"link" %></td>
-        <td><%= link_to '🗑️', post, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"link" %></td>
+        <td class="posts__item__links">
+          <%= link_to 'Читать', post, :class =>"link" %>
+          <%= link_to '🖊️', edit_post_path(post), :class =>"link" %>
+          <%= link_to '🗑️', post, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"link" %>
+        </td>
       </tr>
     <% end %>
   </tbody>
