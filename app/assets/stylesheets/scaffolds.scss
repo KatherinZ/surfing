@@ -14,27 +14,6 @@ body {
   font-family: 'Inter', sans-serif;}
 
 
-tr{
-  display: flex;
-  flex-direction: column;
-}
-tbody tr{
-  padding-left: 3vw;
-}
-
-th {
-  padding-bottom: 5px;
-  text-transform: uppercase;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  text-align: left;
-  padding-top: 1.4vw;}
-td {
-  padding: 0 5px 7px;
-  text-decoration: none;
-  padding-top: 1.4vw;
-}
-
 div.field,
 div.actions {
   margin-bottom: 10px; }
@@ -111,4 +90,74 @@ h3 {
   font-size: 48px;
   line-height: 125%;
   color: #FFFFFF;
+}
+
+
+//styles for form (start with post editing)
+.editing-wrapper {
+  form {
+    margin: 0 auto;
+    margin-top: 2vw;
+    padding: 4vw;
+    width: 50%;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 15px rgba(123, 132, 165, 0.2), 0px 0px 10px rgba(177, 180, 188, 0.15);
+    border-radius: 10px;
+  }
+}
+
+.editing-wrapper__block {
+  background-color: #1B1B1B;
+}
+
+.editing-wrapper__block__title {
+  text-align: center;
+  padding-bottom: 4vw;
+}
+
+.form__block {
+  margin-bottom: 2vw;
+}
+
+.form__block__title {
+  color: #1B1B1B;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 125%;
+  margin-bottom: 4px;
+}
+
+form {
+  input {
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: 'Inter', sans-serif;
+    width: 20vw;
+  }
+
+  .form__block:first-of-type input {
+    border: none;
+  }
+
+  .actions input {
+    background: #15239D;
+    border-radius: 6px;
+    font-weight: 600;
+    color: white;
+    width: auto;
+  }
+
+  textarea {
+    width: 80%;
+    height: 20vw;
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: 'Inter', sans-serif;
+  }
 }

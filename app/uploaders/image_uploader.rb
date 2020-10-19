@@ -16,10 +16,12 @@ class ImageUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-  process resize_to_fit: [800, 800]
-  
+#Здесь измени размеры картинки, как она должна выглядеть в открытом посте-статье. Олеся
+  process resize_to_fit: [800, 500]
+
+#Здесь я задала размеры картинки для превью в посте, тк возникла проблема с относительными единицами, я дала жесткие значения в px (396px - это длина кубика-поста). Олеся
   version :thumb do
-   process resize_to_fill: [350, 350]
+   process resize_to_fill: [396, 190]
 end
 version :small_thumb, from_version: :thumb do
     process resize_to_fill: [20, 20]

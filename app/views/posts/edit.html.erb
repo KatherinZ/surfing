@@ -1,6 +1,13 @@
-<h1>Editing</h1>
+<div class="editing-wrapper">
+  <div class="editing-wrapper__block">
+    <%= render "promo/navbar" %>
+    <div class="editing-wrapper__block__title">
+        <h1>Редактирование поста</h1>
+    </div>
+  </div>
 
-<%= render 'form', post: @post, :class => "form" %>
+  <%= render 'form', post: @post, :class => "form" %>
 
-<%= link_to '👁️', @post %> |
-<%= link_to '⬅️', posts_path %>
+  <%= link_to '👁️', @post %> |
+  <%= link_to '⬅️', posts_path %>
+</div>

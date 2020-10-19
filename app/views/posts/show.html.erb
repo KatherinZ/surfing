@@ -1,41 +1,41 @@
 <p id="notice"><%= notice %></p>
 
-<%= image_tag "surf1.jpg", :class => "style_image" %>
-<%= image_tag "surf2.jpg", :class => "style_image" %>
-<%= image_tag "surf3.jpg", :class => "style_image" %>
-<%= image_tag "surf4.jpg", :class => "style_image" %>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Из раздела</strong>
   <%= @post.name %>
 </p>
 
-<%= link_to(image_tag(@post.image.thumb.url, alt: 'Image'), @post.image.url, target: '_blank') if @post.image? %>
+<%# <%= link_to(image_tag(@post.image.thumb.url, alt: 'Image'),
+@post.image.url, target: '_blank') if @post.image? %>
 
-<%= link_to(image_tag(@post.image.small_thumb.url, alt: 'Image'), @post.image.url, target: '_blank') if @post.image? %>
+<%# <%= link_to(image_tag(@post.image.small_thumb.url, alt: 'Image'), @post.image.url, target: '_blank') if @post.image? %>
 <br>
 <%= image_tag(@post.image.url, alt: 'Image') if @post.image? %>
 
+
+<!--я везде автора закомментировала пока в посте он не нужен. Олеся-->
+<!-- <p>
+	<strong>Author:</strong>
+	<%= @post.author %>
+</p> -->
+
+<!--Ты глянь, может везде этот strong убрать, а то странно Заголовок: Идет название заголовка. Олеся-->
 <p>
-  <strong>Title:</strong>
+  <strong>Заголовок</strong>
   <%= @post.title %>
 </p>
 
 <p>
-	<strong>Author:</strong>
-	<%= @post.author %>
-</p>
-
-<p>
-  <strong>Content:</strong>
+  <strong>Контент</strong>
   <%= @post.content %>
 </p>
 
-<h2>Comments</h2>
+<h2>Комментарии</h2>
 <%= render @post.comments %>
 
 
-<h3>Add a comment:</h3>
+<h3>Добавьте комментарий</h3>
 <%= render "comments/form" %>
 
 <%= link_to '🖊️', edit_post_path(@post) %> |
