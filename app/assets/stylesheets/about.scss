@@ -11,12 +11,12 @@
   format('truetype');
 }
 
+#main-about {
+  background-image: url(image-path('about-bc.png'));
+}
+
 .main__content__img {
-  margin-top: -10vw;
-  padding-left: 10vw;
-  img {
-    width: 100%;
-  }
+  margin-top: -8vw;
 }
 
 
