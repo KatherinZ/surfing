@@ -84,21 +84,34 @@ a:hover {
 }
 
 //styles for "create new post btn"
-
+.top {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  margin-right: 80px;
+  a {
+    background-color: #C7C7CF;
+    padding: 8px 16px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 32px;
+  }
+}
 
 //styles for posts lines and tables
 .posts {
   display: flex;
   flex-wrap: wrap;
-  margin: 80px;
+  margin: 48px 80px;
 }
 
 .posts__item {
   display: flex;
   flex-direction: column;
-  width: 396px;
-  margin-right: 2vw;
-  margin-bottom: 2vw;
+  width: 354px;
+  margin-right: 5vw;
+  margin-bottom: 6vw;
   background: #FFFFFF;
   box-shadow: 2px 2px 15px rgba(123, 132, 165, 0.2), 0px 0px 10px rgba(177, 180, 188, 0.15);
   border-radius: 10px;
@@ -107,6 +120,38 @@ a:hover {
 .posts__item__img {
   border-radius: 10px;
 }
+
 .posts__item__text {
   padding: 4px 20px;
+}
+
+.posts__item__text-theme {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BFBFBF;
+}
+
+.posts__item__text-title {
+  color:  #1B1B1B;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 120%;
+  color: #1B1B1B
+}
+
+.posts__item__links {
+  display: flex;
+  margin-top: 28px;
+  margin-bottom: 16px;
+  a {
+    padding: 4px 20px;
+    &:nth-of-type(2) {
+      margin-left: 38%;
+    }
+    &:hover {
+      color: #15239D;
+    }
+  }
 }
