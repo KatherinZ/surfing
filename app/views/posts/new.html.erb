@@ -1,5 +1,16 @@
-<h1>New Post</h1>
+<div class="new-post__wrapper">
+  <div class="new-post__block">
+    <%= render "promo/navbar" %>
+    <div class="new-post__block__title">
+        <h1>Новый пост</h1>
+    </div>
+  </div>
 
-<%= render 'form', post: @post %>
 
-<%= link_to '⬅️', posts_path %>
+<div class="new-post__form">
+    <%= render 'form', post: @post %>
+</div>
+
+<div class="final-actions">
+  <%= link_to '⬅️', posts_path %>
+</div>

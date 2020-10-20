@@ -188,6 +188,10 @@
       p:hover{
         cursor: pointer;
         background-color: #019B65;
+        transition: 200ms ease-in;
+      }
+      p:hover + img{
+        display: block;
       }
     }
   }
