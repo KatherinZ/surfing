@@ -8,6 +8,8 @@
 
   <%= render 'form', post: @post, :class => "form" %>
 
-  <%= link_to '👁️', @post %> |
-  <%= link_to '⬅️', posts_path %>
+  <div class="final-actions">
+    <%= link_to 'Читать', @post %> |
+    <%= link_to 'К блогу', posts_path %>
+  </div>
 </div>

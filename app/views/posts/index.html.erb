@@ -40,7 +40,7 @@
         <!-- <td class="posts__item__text"><%= post.content %></td> -->
         <td class="posts__item__links">
           <%= link_to 'Читать', post, :class =>"link" %>
-          <%= link_to '🖊️', edit_post_path(post), :class =>"link" %>
+          <%= link_to 'Изменить', edit_post_path(post), :class =>"link" %>
           <%= link_to '🗑️', post, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"link" %>
         </td>
       </tr>

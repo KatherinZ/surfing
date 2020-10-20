@@ -106,7 +106,13 @@ h3 {
 }
 
 .editing-wrapper__block {
-  background-color: #1B1B1B;
+  background-image: url(image-path('edit-bc.png'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  // background-color: #1B1B1B;
 }
 
 .editing-wrapper__block__title {
@@ -221,10 +227,16 @@ form {
 
     }
   }
+  .view-post__title {
+    width: 50%;
+  }
 }
 
 .comment-body{
-  margin: 40px 0 auto 80px;
+  margin: 40px 24px;
+  background-color: #F8F8F8;
+  padding: 17px;
+  border-radius: 4px;
   .comment-body__author{
     display: flex;
     justify-content: space-between;
@@ -246,36 +258,46 @@ form {
 }
 
 .comment-body__remove{
-  border-radius: 8px;
-  margin: 5% 85% auto 0%;
-
-  p{
+  a {
+    border-radius: 8px;
+    margin: 5% 85% auto 0%;
     text-align: center;
     border-radius: 8px;
     border: 1px solid #1b1b1b;
-    padding: 5px 5px 5px 5px;
+    padding: 8px 16px;
+  }
+  &:hover {
+    a {
+      color: white;
+      background-color: #1b1b1b;
+    }
   }
 }
-.comment-body__remove:hover{
-  color: #C4C4C4;
-  background-color: #1b1b1b;
-}
+// .comment-body__remove:hover{
+//   color: #C4C4C4;
+//   background-color: #1b1b1b;
+// }
 
-.final-actions{
-  margin: 50px 48%;
+.final-actions {
+  margin: 50px 28%;
 }
 
 
 // styles for adding new post
-
 .new-post__block {
-  background-color: #1B1B1B;
+  // background-color: #1B1B1B;
+  background-image: url(image-path('new-bc.png'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
 }
 
 .new-post__wrapper{
   .new-post__block__title{
     text-align: center;
-    padding-bottom: 1vw;
+    padding-bottom: 4vw;
     h1{
       font-size: 36px;
     }
