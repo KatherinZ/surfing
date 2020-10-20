@@ -1,14 +1,21 @@
-<p>
-	<b>Commenter:</b>
-	<%= comment.commenter %>
-</p>
-<p>
-	<b>Comment:</b>
-	<%= comment.body %>
-</p>
+<div class="comment-body">
+	<div class="comment-body__author">
+		<p>
+			<!-- <b>Комментатор</b> -->
+			<%= comment.commenter %>
+		</p>
+		<p>22:57</p>
+	</div>
 
-<p>
- <%= link_to '🗑️', [comment.post, comment],
-							 :confirm => 'Are you sure?',
-							 :method => :delete %>
-</p>
+	<p class="comment-body__content">
+		<!-- <b>Комментарий:</b> -->
+		<%= comment.body %>
+	</p>
+  <div class="comment-body__remove">
+		<p>
+		 <%= link_to 'delete', [comment.post, comment],
+									 :confirm => 'Are you sure?',
+									 :method => :delete %>
+		</p>
+  </div>
+</div>

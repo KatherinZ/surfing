@@ -1,39 +1,53 @@
 <p id="notice"><%= notice %></p>
 
+<div class="one-post">
+  <div class="one-post__block">
+    <%= render "promo/navbar" %>
+  </div>
+
+  <div class="view-post">
+    <p class="view-post__name">
+     <%= @post.name %>
+   </p>
+    <div class="view-post__img">
+      <%= image_tag(@post.image.url, alt: 'Image', :class => "post-pic" ) if @post.image? %>
+    </div>
+
+    <div class="view-post__discript">
+      <!-- <p>
+      	<strong>Author:</strong>
+      	<%= @post.author %>
+      </p> -->
+
+      <div class="view-post__title">
+        <h2>
+          <%= @post.title %>
+        </h2>
+      </div>
+
+      <div class="rect"></div>
 
 
-<p>
-  <strong>Name:</strong>
-  <%= @post.name %>
-</p>
+     <div class="view-post__content">
+       <p>
+         <%= @post.content %>
+       </p>
+     </div>
 
-<%= link_to(image_tag(@post.image.thumb.url, alt: 'Image'), @post.image.url, target: '_blank') if @post.image? %>
+    </div>
 
-<%= link_to(image_tag(@post.image.small_thumb.url, alt: 'Image'), @post.image.url, target: '_blank') if @post.image? %>
-<br>
-<%= image_tag(@post.image.url, alt: 'Image') if @post.image? %>
+    <div class="view-post__comments">
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+      <h3>Добавьте комментарий</h3>
+      <%= render "comments/form" %>
 
-<p>
-	<strong>Author:</strong>
-	<%= @post.author %>
-</p>
+      <h2>Комментарии</h2>
+      <%= render @post.comments %>
+    </div>
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
-
-<h2>Comments</h2>
-<%= render @post.comments %>
-
-
-<h3>Add a comment:</h3>
-<%= render "comments/form" %>
-
-<%= link_to '🖊️', edit_post_path(@post) %> |
-<%= link_to '⬅️', posts_path %>
+  </div>
+</div>
+<div class="final-actions">
+  <%= link_to '🖊️', edit_post_path(@post) %> |
+  <%= link_to '⬅️', posts_path %>
+</div>

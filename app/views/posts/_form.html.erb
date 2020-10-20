@@ -11,32 +11,38 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
+  <div class="form__block">
+    <%# <%= form.label :image %>
+    <h4 class="form__block__title">Загрузите изображение</h4>
+    <%= form.file_field :image, :class => "" %>
+  </div>
+
+<!-- тут были классы field вместо form__block -->
+  <div class="form__block">
+    <%# <%= form.label :name %>
+    <h4 class="form__block__title">Напишите тему</h4>
     <%= form.text_field :name %>
   </div>
 
-  <div class="field">
-    <%= form.label :title %>
+  <div class="form__block">
+    <%# <%= form.label :title %>
+    <h4 class="form__block__title">Заголовок поста</h4>
     <%= form.text_field :title %>
   </div>
 
-  <div>
-	<%= form.label :image %>
-	<%= form.file_field :image %>
-</div>
-
-  <div class="field">
+<!--я везде автора закомментировала пока в посте он не нужен. Олеся-->
+  <!-- <div class="field">
   	<%= form.label :author %>
   	<%= form.text_field :author %>
-  </div>
+  </div> -->
 
-  <div class="field">
-    <%= form.label :content %>
+  <div class="form__block">
+    <%# <%= form.label :content %>
+    <h4 class="form__block__title">Текст поста</h4>
     <%= form.text_area :content %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit%>
   </div>
 <% end %>

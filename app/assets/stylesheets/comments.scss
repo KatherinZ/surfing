@@ -1,3 +1,19 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+ .field{
+   margin: 40px 180px;
+ }
+ .field:nth-of-type(2){
+   textarea{
+     height: 5vw;
+   }
+ }
+
+.actions{
+  margin: 5% 0 auto 70%;
+}
+.actions a:hover{
+background-color: #c4c4c4;
+cursor: pointer;
+}

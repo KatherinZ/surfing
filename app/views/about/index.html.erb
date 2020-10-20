@@ -1,13 +1,13 @@
 
 <!--first start screen-->
-<section class="main section">
+<section class="main section" id="main-about" %>
   <%= render "promo/navbar" %>
   <div class="main__content">
     <div class="main__content__text">
       <h1>Серфинг ближе, чем вам кажется</h1>
     </div>
-    <div class="main__content__img">
-      <%= image_tag("main-about-pic.png", :class => "main-pic") %>
+    <div class="main__content__img main__content__img-about">
+      <%= image_tag("main-about.png", :class => "main-pic") %>
     </div>
   </div>
 </section>
@@ -59,7 +59,7 @@
         <h3>Познавать серф-культуру</h3>
         <%= image_tag "culture.png", :class => "task__pic" %>
         <p>Раздел «Лайфстайл» дает полное погружение
-        в &nbsp;философию и &nbsp;культуру серфинга. Давно хотели узнать, что такое локализм? Или что на &nbsp;самом деле означает серферская «шака»? Здесь есть все ответы.</p>
+        в&nbsp;философию и&nbsp;культуру серфинга. Давно хотели узнать, что такое локализм? Или что на&nbsp;самом деле означает серферская «шака»? Здесь есть все ответы.</p>
       </div>
       <div class="tasks__task">
         <h3>Находить серф-школы</h3>
@@ -85,7 +85,7 @@
       <div class="thin-line"></div>
       <p>основные фичи</p>
     </div>
-    <%= image_tag "j_letter.png", :class => "j_letter" %>
+    <%= image_tag "j-letter.png", :class => "j_letter" %>
     <div class="all-features">
       <div class="feature">
          <p>Карта спотов</p>
