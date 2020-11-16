@@ -31,13 +31,15 @@
   <tbody class="posts">
     <% @posts.each do |post| %>
       <tr class="posts__item">
-        <td><%= image_tag( post.image.thumb.url, alt: 'Image' , :class => "posts__item__img") %></td>
+        <td>
+          <%# <%= image_tag( post.image.thumb.url, alt: 'Image' , :class => "posts__item__img") %> %>
+        </td>
         <td class="posts__item__text posts__item__text-theme"><%= post.name %></td>
         <td class="posts__item__text posts__item__text-title"><%= post.title %></td>
         <!-- <td class="posts__item__text">
           <%= post.author %>
         </td> -->
-        <!-- <td class="posts__item__text"><%= post.content %></td> -->
+         <!-- <td class="posts__item__text"><%= post.content.html_safe %></td>  -->
         <td class="posts__item__links">
           <%= link_to 'Читать', post, :class =>"link" %>
           <%= link_to '🖊️', edit_post_path(post), :class =>"link" %>

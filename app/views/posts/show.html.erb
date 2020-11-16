@@ -30,7 +30,7 @@
 
      <div class="view-post__content">
        <p>
-         <%= @post.content %>
+         <%= @post.content.html_safe %>
        </p>
      </div>
 
@@ -47,6 +47,13 @@
 
   </div>
 </div>
+
+<% if user_signed_in? %>
+<%= render "comments/form" %>
+<% else %>
+<p>Please <%= link_to 'login', new_user_session_path %> or <%= link_to 'register', new_user_registration_path %> to comment.</p>
+<% end %>
+
 <div class="final-actions">
   <%= link_to '🖊️', edit_post_path(@post) %> |
   <%= link_to '⬅️', posts_path %>
