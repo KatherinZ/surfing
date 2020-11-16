@@ -43,9 +43,15 @@
   </div>
 
   <div class="field">
+  <%= form.label :category_id %>
+  <%= form.select :category_id, Category.pluck(:name, :id) %>
+</div>
+
+  <div class="field">
       <%= form.label :content %>
       <%= form.cktext_area :content %>
     </div>
+
 
 
   <div class="actions">

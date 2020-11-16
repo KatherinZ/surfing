@@ -15,8 +15,13 @@
 
 <div class="top">
   <%= link_to 'создать пост', new_post_path, :class => "create-post" %>
+  <%= link_to 'New Category', new_category_path %>
+  
 </div>
-
+    <h2>All Categories</h2>
+    <% Category.all.each do |cat| %>
+    <%= link_to cat.name, posts_path(category: cat.name) %> <br>
+    <% end %>
 
 <table>
   <!-- <thead>
@@ -31,6 +36,7 @@
   <tbody class="posts">
     <% @posts.each do |post| %>
       <tr class="posts__item">
+        <td><%= post.category.name %></td>
         <td>
           <%# <%= image_tag( post.image.thumb.url, alt: 'Image' , :class => "posts__item__img") %> %>
         </td>
@@ -40,6 +46,15 @@
           <%= post.author %>
         </td> -->
          <!-- <td class="posts__item__text"><%= post.content.html_safe %></td>  -->
+
+         <td>
+        	<%= post.likes.count %> <%= (post.likes.count) == 1 ? 'Like' : 'Likes'%>
+         </td>
+
+         <td>
+        	<%= post.comments.count %> <%= (post.comments.count) == 1 ? 'Comment' : 'Comments'%>
+        </td>
+
         <td class="posts__item__links">
           <%= link_to 'Читать', post, :class =>"link" %>
           <%= link_to '🖊️', edit_post_path(post), :class =>"link" %>
