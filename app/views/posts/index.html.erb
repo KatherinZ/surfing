@@ -16,7 +16,7 @@
 <div class="top">
   <%= link_to 'создать пост', new_post_path, :class => "create-post" %>
   <%= link_to 'New Category', new_category_path %>
-  
+
 </div>
     <h2>All Categories</h2>
     <% Category.all.each do |cat| %>
@@ -49,6 +49,7 @@
 
          <td>
         	<%= post.likes.count %> <%= (post.likes.count) == 1 ? 'Like' : 'Likes'%>
+        	<%= post.dislikes.count %> <%= (post.dislikes.count) == 1 ? 'Dislike' : 'Dislikes'%>
          </td>
 
          <td>

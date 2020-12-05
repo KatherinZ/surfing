@@ -40,42 +40,64 @@
     </div>
 
     <p><%= @post.likes.count %> <%= (@post.likes.count) == 1 ? 'Like' : 'Likes'%></p>
+    <p><%= @post.dislikes.count %> <%= (@post.dislikes.count) == 1 ? 'Dislike' : 'Dislikes'%></p>
+    <p><%= @post.favorites.count %> <%= (@post.favorites.count) == 1 ? 'Favorite' : 'Favorites'%></p>
 
-      <% if user_signed_in? %>
+  <%# Likes %>
+
+  <% if user_signed_in? %>
     <% pre_like = @post.likes.find { |like| like.user_id == current_user.id} %>
     <% if pre_like %>
       <%= button_to 'Unlike', post_like_path(@post, pre_like), method: :delete %>
     <% else %>
       <%= button_to 'Like', post_likes_path(@post), method: :post %>
     <% end %>
+
+  <%# Dislikes %>
+
+    <% pre_dislike = @post.dislikes.find { |dislike| dislike.user_id == current_user.id} %>
+  <% if pre_dislike %>
+    <%= button_to 'Undislike', post_dislike_path(@post, pre_dislike), method: :delete %>
+  <% else %>
+    <%= button_to 'Dislike', post_dislikes_path(@post), method: :post %>
   <% end %>
 
-    <% pre_like = @post.likes.find { |like| like.user_id == current_user.id} %>
-  <% if pre_like %>
-    <%= button_to 'Unlike', post_like_path(@post, pre_like), method: :delete %>
+    <%# Favs %>
+
+    <% pre_favorite = @post.favorites.find { |favorite| favorite.user_id == current_user.id} %>
+  <% if pre_favorite %>
+      <%= button_to 'Remove from Favorite', post_favorite_path(@post, pre_favorite), method: :delete %>
   <% else %>
-    <%= button_to 'Like', post_likes_path(@post), method: :post %>
+      <%= button_to 'Add to Favorite', post_favorites_path(@post), method: :post %>
   <% end %>
+
+  <% end %>
+
+
 
     <div class="view-post__comments">
 
-      <h3>Добавьте комментарий</h3>
-      <%= render "comments/form" %>
-
       <h2>Комментарии</h2>
       <%= render @post.comments %>
+
+      <h3>Добавьте комментарий</h3>
+      <% if user_signed_in? %>
+        <%= render "comments/form" %>
+
+      <% else %>
+        <p>Please <%= link_to 'login', new_user_session_path %> or <%= link_to 'register', new_user_registration_path %> to comment.</p>
+      <% end %>
+
     </div>
 
   </div>
 </div>
 
-<% if user_signed_in? %>
-<%= render "comments/form" %>
-<% else %>
-<p>Please <%= link_to 'login', new_user_session_path %> or <%= link_to 'register', new_user_registration_path %> to comment.</p>
-<% end %>
+
 
 <div class="final-actions">
-  <%= link_to '🖊️', edit_post_path(@post) %> |
+  <% if user_signed_in? %>
+    <%= link_to '🖊️', edit_post_path(@post) %> |
+  <% end %>
   <%= link_to '⬅️', posts_path %>
 </div>

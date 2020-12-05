@@ -5,6 +5,8 @@ class Post < ApplicationRecord
 # //зависимость
 		has_many :comments, :dependent => :destroy
 		has_many :likes, dependent: :destroy
+		has_many :dislikes, dependent: :destroy
+		has_many :favorites, dependent: :destroy
 
     belongs_to :user
 		belongs_to :category
