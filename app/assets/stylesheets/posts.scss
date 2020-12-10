@@ -22,9 +22,9 @@ a{
 a:visited {
   color: #666; }
 
-a:hover {
-  color: #fff;
-  transform: scale(0.1vw); }
+// a:hover {
+//   color: #fff;
+//   transform: scale(0.1vw); }
 
 
 // body btn{
@@ -126,6 +126,7 @@ a:hover {
 }
 
 .posts__item__text-theme {
+  padding-top: 12px;
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
@@ -148,7 +149,12 @@ a:hover {
   a {
     padding: 4px 20px;
     &:nth-of-type(2) {
-      margin-left: 38%;
+      padding: 4px 8px;
+      margin-left: 32%;
+      color: #E0E0E3;
+      &:hover {
+        color: #595959;
+      }
     }
     &:hover {
       color: #15239D;
